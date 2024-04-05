@@ -1,7 +1,7 @@
 // import React from 'react';
 import Spline from '@splinetool/react-spline';
 import '../HomePage/HomePage.css';
-import polaroidImage from '../../assets/images/poleroid2.png';
+import polaroidImage from '../../assets/images/poleroid.png';
 
 const HomePage = () => {
 
@@ -17,7 +17,7 @@ const HomePage = () => {
                     textShadow: '1px 1px 2px #000000',
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Welcome to my Pizza!</h1>
-                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-36 ml-14 mr-14" style={{ maxWidth: '50%', maxHeight: 'auto' }} />
+                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-28 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
 
 
                 {/* Other content here */}
