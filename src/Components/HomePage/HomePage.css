@@ -7,22 +7,22 @@ body {
 /* Target the Spline canvas/container directly if possible */
 
 .spline-scale {
-  transform: scale(1);
+  transform: scale(1.2); /* Base scale */
 }
-
 
 @media (min-width: 768px) {
   .spline-scale {
-    transform: scale(1.15);
+    transform: scale(1.3); /* Adjust for tablets */
   }
 }
-
 
 @media (min-width: 1024px) {
   .spline-scale {
-    transform: scale(1.3);
+    transform: scale(1.5); /* Adjust for desktops */
   }
 }
+
+
 
 
 
