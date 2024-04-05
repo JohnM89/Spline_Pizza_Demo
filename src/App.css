@@ -73,7 +73,7 @@ body {
 }
 
 #stripe-container {
-  position: fixed;
+  position: absolute;
   z-index: 3;
   left: 50%;
   bottom: 0px;
