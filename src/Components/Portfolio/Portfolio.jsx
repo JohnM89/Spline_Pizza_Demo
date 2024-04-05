@@ -1,5 +1,5 @@
 // import React from 'react';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 const Portfolio = () => {
     return (
@@ -12,9 +12,9 @@ const Portfolio = () => {
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Portfolio Page</h1>
             <p>
-                <div className="spline-container pd-8" >
+                {/* <div className="spline-container pd-8" >
                     <Spline scene="https://prod.spline.design/YgnICWfOksCcmpQU/scene.splinecode" />
-                </div>
+                </div> */}
             </p>
         </div>
     );
