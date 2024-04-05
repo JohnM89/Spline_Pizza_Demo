@@ -5,7 +5,7 @@ import '../HomePage/HomePage.css';
 const HomePage = () => {
 
     return (
-        <div className="flex">
+        <div className="grid">
                 <div className="absolute bg-black top-6  left-9 w-0 h-0.5 horizontal-line"></div> 
     <div className="absolute bg-black top-9 left-6 h-0 w-0.5 vertical-line"></div>
             {/* Left side content */}
@@ -22,7 +22,8 @@ const HomePage = () => {
 
             {/* Right side for Spline 3D object */}
                                     {/* <div className=" spline-container" > */}
-                            <Spline className="z-10" style={{ transform: 'scale(1.3)' }} scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
+                            <Spline className="z-10 spline-scale" scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
+
                         {/* </div> */}
             {/* <div className="" id="modal-wrapper">
                 <div id="modal">

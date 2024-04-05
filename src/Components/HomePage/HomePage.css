@@ -6,6 +6,25 @@ body {
 
 /* Target the Spline canvas/container directly if possible */
 
+.spline-scale {
+  transform: scale(1);
+}
+
+
+@media (min-width: 768px) {
+  .spline-scale {
+    transform: scale(1.15);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .spline-scale {
+    transform: scale(1.3);
+  }
+}
+
+
 
 
 
