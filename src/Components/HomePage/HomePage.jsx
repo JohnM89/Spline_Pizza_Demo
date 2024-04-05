@@ -24,8 +24,8 @@ const HomePage = () => {
             </div>
 
             {/* Right side for Spline 3D object */}
-    <div className="z-10 mt-14 mb-14 ml-14 mr-14 items-center justify-end md:pr-10">
-        <div className="spline-container overflow-hidden relative" style={{ maxWidth: '90%', maxHeight: '90vh' }}>
+    <div className="z-10 mb-14 ml-14 mr-14 items-center justify-end md:pr-10 flex flex-col justify-center h-full">
+        <div className="spline-container relative" >
             <Spline className="spline-scale w-full h-auto" scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
         </div>
   
