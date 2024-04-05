@@ -17,7 +17,7 @@ const HomePage = () => {
                     textShadow: '1px 1px 2px #000000',
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Welcome to my Pizza!</h1>
-                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-28 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
+                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
 
 
                 {/* Other content here */}
