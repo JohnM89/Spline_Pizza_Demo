@@ -1,0 +1,9 @@
+body {
+  font-family: 'CheesePizza', sans-serif;
+}
+
+/* Target the Spline canvas/container directly if possible */
+.spline-container canvas,
+.spline-container {
+  background: transparent !important; /* Use important to override default styles */
+}
