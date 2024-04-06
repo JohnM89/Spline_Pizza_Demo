@@ -1,0 +1,20 @@
+/* About.css */
+@keyframes drawHorizontalLine {
+    to { width: 25%; } /* Adjust as needed */
+}
+
+@keyframes drawVerticalLine {
+    to { height: 50px; } /* Adjust based on desired length */
+}
+
+.horizontal-line {
+
+
+    animation: drawHorizontalLine 2s forwards;
+}
+
+.vertical-line {
+
+
+    animation: drawVerticalLine 2s .5s forwards; /* Start after horizontal line */
+}
