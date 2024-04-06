@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="absolute bg-black top-9 left-6 h-0 w-0.5 vertical-line"></div>
             {/* Left side content */}
             <div className="z-10 flex flex-col  pl-14 pt-12 pr-14">
-                <h1 className="text-6xl font-bold animate-slideFadeIn pl-2 pt-2 pr-2" style={{
+                <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-2 pt-2 pr-2" style={{
                     color: 'green',
                     textShadow: '1px 1px 2px #000000',
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
