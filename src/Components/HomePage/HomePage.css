@@ -295,22 +295,27 @@ body {
     }
 }
 
-@keyframes drawHorizontalLine {
+@keyframes drawHorizontalLine1 {
     to { width: 25%; } /* Adjust as needed */
 }
 
-@keyframes drawVerticalLine {
-    to { height: 100px; } /* Adjust based on desired length */
+@keyframes drawVerticalLine1 {
+    to { height: 50px; } /* Adjust based on desired length */
 }
 
-.horizontal-line {
+.horizontal-line1 {
 
 
-    animation: drawHorizontalLine 2s forwards;
+    
+    animation: drawHorizontalLine1 1.78s forwards;
+    
 }
 
-.vertical-line {
+
+ .vertical-line1 {
 
 
-    animation: drawVerticalLine 2s .5s forwards; /* Start after horizontal line */
+    
+    animation: drawVerticalLine1 1.32s .5s forwards;
+    
 }

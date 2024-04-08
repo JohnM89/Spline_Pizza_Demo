@@ -18,7 +18,7 @@ const HomePage = () => {
 
     gsap.fromTo(".polaroid", 
         { x: -500, opacity: 0, rotation: 25 }, 
-        { x: 0, opacity: 1, rotation: 0, duration: 1, ease: "power1.out" } 
+        { x: 0, opacity: 1, rotation: 0, duration: 1.7, ease: "power1.out" } 
     );
 
     Draggable.create(".polaroid", {
@@ -32,8 +32,8 @@ const HomePage = () => {
     return (
         
         <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-                <div className="absolute bg-black top-6  left-9 w-0 h-0.5 horizontal-line"></div> 
-    <div className="absolute bg-black top-9 left-6 h-0 w-0.5 vertical-line"></div>
+                <div className=" z-10 absolute bg-black top-6  left-9 w-0 h-0.5 horizontal-line1"></div> 
+    <div className="z-10 absolute bg-black top-9 left-6 h-0 w-0.5 vertical-line1"></div>
             {/* Left side content */}
             <div className="z-10 flex flex-col  pl-14 pt-12 pr-14">
                 <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-2 pt-2 pr-2" style={{
