@@ -1,6 +1,6 @@
 // import React from 'react';
 import '../About/About.css';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 const About = () => {
     return (
@@ -11,9 +11,9 @@ const About = () => {
                     <div id="modal" className="w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"> {/* Control modal width on larger screens */}
                         <div id="modal-background"></div>
                         <div id="modal-content" className="flex flex-col justify-center items-center">
-                            <div className="spline-container">
+                            {/* <div className="spline-container">
                                 <Spline scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -21,12 +21,12 @@ const About = () => {
 
             {/* Right column for title and containers */}
             <div className="relative space-y-6 p-16 flex flex-col justify-start items-center">
-                                    <div className="absolute bg-black top-16 right-16 w-0 h-0.5 horizontal-line"></div> 
-    <div className="absolute bg-black top-16 right-12 h-0 w-0.5 vertical-line"></div>
+                                    <div className="absolute bg-black top-16 right-16 w-0 h-0.5 horizontal-line2"></div> 
+    <div className="absolute bg-black top-16 right-12 h-0 w-0.5 vertical-line2"></div>
 
 
                 {/* Title */}
-                <h1 className=" text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn" style={{ color: 'green', textShadow: '1px 1px 2px #000000' }}>More about Pizza!</h1>
+                <h1 className=" text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeInR" style={{ color: 'green', textShadow: '1px 1px 2px #000000' }}>More about Pizza!</h1>
                 
                 {/* Three containers */}
 <div className="w-full flex flex-col space-y-4">

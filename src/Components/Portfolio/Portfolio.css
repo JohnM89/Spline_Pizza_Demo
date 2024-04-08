@@ -1,0 +1,26 @@
+@keyframes drawHorizontalLine1 {
+    to { width: 25%; } /* Adjust as needed */
+}
+
+@keyframes drawVerticalLine1 {
+    to { height: 50px; } /* Adjust based on desired length */
+}
+
+.horizontal-line1 {
+
+
+    
+    animation: drawHorizontalLine1 1.78s forwards;
+    opacity: .5;
+    
+}
+
+
+ .vertical-line1 {
+
+
+    
+    animation: drawVerticalLine1 1.32s .5s forwards;
+    opacity: .5;
+    
+}

@@ -51,7 +51,23 @@ h1 {
 }
 
 .animate-slideFadeIn {
-  animation: slideFadeIn 2s ease-out forwards;
+  animation: slideFadeIn 1.75s ease-out forwards;
+}
+
+@keyframes slideFadeInR {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Start from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at its original position */
+  }
+}
+
+/* Utility class for the animation */
+.animate-slideFadeInR {
+  animation: slideFadeInR 2.5s ease-out forwards;
 }
 
 @font-face {

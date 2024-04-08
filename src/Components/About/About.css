@@ -1,20 +1,22 @@
 /* About.css */
-@keyframes drawHorizontalLine {
-    to { width: 25%; } /* Adjust as needed */
+@keyframes drawHorizontalLine2 {
+    to { width: 35%; } /* Adjust as needed */
 }
 
-@keyframes drawVerticalLine {
+@keyframes drawVerticalLine2 {
     to { height: 50px; } /* Adjust based on desired length */
 }
 
-.horizontal-line {
+.horizontal-line2 {
 
 
-    animation: drawHorizontalLine 2s forwards;
+    animation: drawHorizontalLine2 2s forwards;
+    opacity: .5;
 }
 
-.vertical-line {
+.vertical-line2 {
 
 
-    animation: drawVerticalLine 2s .5s forwards; /* Start after horizontal line */
+    animation: drawVerticalLine2 2s .8s forwards; /* Start after horizontal line */
+    opacity: .5;
 }

@@ -6,6 +6,7 @@ import HomePage from './Components/HomePage/HomePage';
 import AboutMe from './Components/About/About';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Contact from './Components/Contact/Contact';
+
 // import ParallaxComponent from './utils/Parallax.jsx'
 
 function App() {
