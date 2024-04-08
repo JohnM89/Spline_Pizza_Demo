@@ -5,6 +5,14 @@ body {
     
 }
 
+.flair, .flair--3 {
+  cursor: pointer;
+  /* width: 70px;
+  height: 70px;
+  max-height: 15vh;
+  max-width: 15vh; */
+}
+
 
 
 /* Target the Spline canvas/container directly if possible */

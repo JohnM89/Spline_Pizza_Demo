@@ -1,9 +1,22 @@
 // import React from 'react';
 import Spline from '@splinetool/react-spline';
+import { useEffect } from 'react';
 import '../HomePage/HomePage.css';
 import polaroidImage from '../../assets/images/poleroid2.png';
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+
+
 
 const HomePage = () => {
+  useEffect(() => {
+    gsap.registerPlugin(Draggable);
+    Draggable.create(".flair--3", {
+      type: "rotation",
+      inertia: false
+    });
+  }, []);
+
 
     return (
         
@@ -18,7 +31,7 @@ const HomePage = () => {
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Welcome to my Pizza!</h1>
                 <div>
-                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
+                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14 flair--3" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
 {/* <svg className="handwriting w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} viewBox="0 0 195.84 195.84">
     <path
        style={{ fill: "none", stroke: "#000000", strokeWidth: "2" }} 
