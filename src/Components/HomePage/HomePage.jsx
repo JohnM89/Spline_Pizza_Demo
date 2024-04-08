@@ -5,17 +5,28 @@ import '../HomePage/HomePage.css';
 import polaroidImage from '../../assets/images/poleroid2.png';
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
+import { CustomEase } from "gsap/CustomEase";
+
+
 
 
 
 const HomePage = () => {
-  useEffect(() => {
+    useEffect(() => {
     gsap.registerPlugin(Draggable);
-    Draggable.create(".flair--3", {
-      type: "rotation",
-      inertia: false
+    gsap.registerPlugin(CustomEase);
+
+    gsap.fromTo(".polaroid", 
+        { x: -500, opacity: 0, rotation: 25 }, 
+        { x: 0, opacity: 1, rotation: 0, duration: 1, ease: "power1.out" } 
+    );
+
+    Draggable.create(".polaroid", {
+        type: "rotation",
+        inertia: false
     });
-  }, []);
+    }, []);
+  
 
 
     return (
@@ -31,7 +42,7 @@ const HomePage = () => {
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Welcome to my Pizza!</h1>
                 <div>
-                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14 flair--3" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
+                <img src={polaroidImage} alt="Descriptive Alt Text" className="w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14 polaroid" style={{ maxWidth: '75%', maxHeight: 'auto' }} />
 {/* <svg className="handwriting w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} viewBox="0 0 195.84 195.84">
     <path
        style={{ fill: "none", stroke: "#000000", strokeWidth: "2" }} 
@@ -46,32 +57,15 @@ const HomePage = () => {
             </div>
 
             {/* Right side for Spline 3D object */}
-    <div className="z-10 mb-14 ml-14 mr-14 items-center justify-end md:pr-10 flex flex-col justify-center h-full">
+    <div className="z-10 mb-14 ml-14 mr-14 items-center justify-end md:pr-10 flex flex-col justify-center w-full h-auto">
         <div className="spline-container relative" >
             <Spline className="spline-scale w-full h-auto" scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
         </div>
   
     </div>
-            {/* <div className="" id="modal-wrapper">
-                <div id="modal">
-                    <div id="modal-background"></div>
-                    <div id="modal-content">
 
-                        <div className="flex justify-center items-center h-screen">
 
-                            <button type="button" className="bg-white modal-action">
-                                <div className="modal-action-pattern"></div>
-                                <div className="modal-action-fade"></div>
-                                <span className="modal-action-text inter-font">PIZZA</span>
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div> */}
-
-        </div>
+</div>
     );
 };
 

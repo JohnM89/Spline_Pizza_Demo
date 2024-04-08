@@ -5,13 +5,11 @@ body {
     
 }
 
-.flair, .flair--3 {
+.polaroid {
   cursor: pointer;
-  /* width: 70px;
-  height: 70px;
-  max-height: 15vh;
-  max-width: 15vh; */
+  transform: translate3d(0, 0, 0);
 }
+
 
 
 
