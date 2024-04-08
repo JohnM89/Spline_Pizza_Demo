@@ -32,12 +32,12 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'pwa-192x192.png', // Path to your icons
+            src: '/images/OPHS2.png', // Path to your icons
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/images/OPHS.png',
             sizes: '512x512',
             type: 'image/png',
           },
