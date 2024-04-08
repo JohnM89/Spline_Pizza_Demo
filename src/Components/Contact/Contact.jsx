@@ -1,30 +1,72 @@
 // import React from 'react';
-import { useEffect, useState, useRef } from 'react'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import '../Contact/Contact.css'
 
 const Contact = () => {
+  const form = useRef()
 
-    const form = useRef()
-    return (
-        <div>
-            <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-24 pt-28" style={{
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_9alko6t', 'template_obvxi9f', form.current, 'M25D7aTY81tiWY-_J')
+
+      .then(
+        (result) => {
+          console.log(result.text)
+          
+        },
+        (error) => {
+          console.log(error.text)
+          
+        }
+      )
+  }
+
+
+  return (
+    <div className="contact">
+                    <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-24 pt-28" style={{
                 color: 'green',
                 textShadow: '1px 1px 2px #000000',
                 // filter: 'drop-shadow(0 0 0.75rem crimson)'
             }}>Contact Pizza</h1>
-            <form className="flex justify-center items-center">
-                <label htmlFor="name">DO NOT:</label>
-                <input type="text" id="name" name="name" />
+    <div className="flex flex-box align-center justify-center  ">
+        
+      <div className="text-zone md:text-xl lg:text-3xl xl:text-5xl 2xl:text-2xl">
 
-                <label htmlFor="email">CONTACT:</label>
-                <input type="email" id="email" name="email" />
-
-                <label htmlFor="message">THE PIZZA:</label>
-                <textarea id="message" name="message" rows="4" />
-
-                <button type="submit">  </button>
-            </form>
+        <p>
+          Contact me! I am always looking for exciting projects.
+        </p>
+        <div className="contact-form">
+          <form ref={form} onSubmit={sendEmail}>
+            <ul>
+              <li className="half">
+                <input placeholder="Name" type="text" name="name" required />
+              </li>
+              <li className="half">
+                <input placeholder="Email" type="email" name="email" required />
+              </li>
+              <li>
+                <input placeholder="Subject" type="text" name="subject" required />
+              </li>
+              <li>
+                <textarea placeholder="Message" name="message" required></textarea>
+              </li>
+              <li>
+                <input type="submit" className="flat-button" value="SEND" />
+              </li>
+            </ul>
+          </form>
         </div>
-    );
-};
+      </div>
+      {/* <div className="info">
+        John MacNeil
+      </div> */}
+    </div>
+    </div>
+  )
+}
 
 export default Contact;
