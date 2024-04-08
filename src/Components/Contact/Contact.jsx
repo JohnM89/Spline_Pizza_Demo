@@ -1,6 +1,9 @@
 // import React from 'react';
+import { useEffect, useState, useRef } from 'react'
 
 const Contact = () => {
+
+    const form = useRef()
     return (
         <div>
             <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-24 pt-28" style={{
