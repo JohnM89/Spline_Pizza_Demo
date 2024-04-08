@@ -4,7 +4,8 @@ import '../Portfolio/Portfolio.css';
 
 const Portfolio = () => {
     return (
-        <div className="grid grid-cols-1">
+        <div className="grid">
+           
             {/* Your portfolio content goes here */}
                 <div className="relative bg-black top-6  left-9 w-0 h-0.5 horizontal-line1"></div> 
     <div className="relative bg-black top-9 left-6 h-0 w-0.5 vertical-line1"></div>
@@ -14,13 +15,8 @@ const Portfolio = () => {
                     textShadow: '1px 1px 2px #000000',
                     // filter: 'drop-shadow(0 0 0.75rem crimson)'
                 }}>Portfolio Page</h1>
-            <p>
-                
-                {/* <div className="spline-container pd-8" >
-                    <Spline scene="https://prod.spline.design/YgnICWfOksCcmpQU/scene.splinecode" />
-                </div> */}
-            </p>
-        </div>
+            </div>
+        
         
     );
 };
