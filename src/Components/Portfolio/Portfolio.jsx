@@ -48,10 +48,20 @@ const Portfolio = () => {
 
     // add bodies
     const group = Body.nextGroup(true);
+    
         
         // define the ropes
     const ropeA = Composites.stack(100, 50, 8, 1, 10, 10, function(x, y) {
-        return Bodies.rectangle(x, y, 50, 20, { collisionFilter: { group: group } });
+        return Bodies.rectangle(x, y, 150, 20, { collisionFilter: { group: group },
+        render: {
+            sprite: {
+                texture: '/src/assets/rope2.png',
+                // rotation: Math.PI / 2
+            }
+        }
+        
+        
+         });
     });
     
     Composites.chain(ropeA, 0.5, 0, -0.5, 0, { stiffness: 0.8, length: 2, render: { type: 'line' } });
@@ -65,7 +75,13 @@ const Portfolio = () => {
     // group = Body.nextGroup(true);
     
     const ropeB = Composites.stack(200, 50, 8, 1, 10, 10, function(x, y) {
-        return Bodies.rectangle(x, y, 50, 20, { collisionFilter: { group: group } });
+        return Bodies.rectangle(x, y, 150, 20, { collisionFilter: { group: group },
+                render: {
+            sprite: {
+                texture: '/src/assets/rope2.png',
+                // rotation: Math.PI / 2
+            }
+        } });
     });
     
     Composites.chain(ropeB, 0.5, 0, -0.5, 0, { stiffness: 0.8, length: 2, render: { type: 'line' } });
@@ -79,7 +95,14 @@ const Portfolio = () => {
     // group = Body.nextGroup(true);
 
     const ropeC = Composites.stack(300, 50, 8, 1, 10, 10, function(x, y) {
-        return Bodies.rectangle(x, y, 50, 20, { collisionFilter: { group: group } });
+        return Bodies.rectangle(x, y, 150, 20, { collisionFilter: { group: group },
+                render: {
+            sprite: {
+                texture: '/src/assets/rope2.png',
+                // rotation: Math.PI / 2
+            }
+        }
+         });
     });
     
     Composites.chain(ropeC, 0.5, 0, -0.5, 0, { stiffness: 0.8, length: 2, render: { type: 'line' } });
