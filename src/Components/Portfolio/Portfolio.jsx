@@ -2,7 +2,6 @@
 // import Spline from '@splinetool/react-spline';
 import '../Portfolio/Portfolio.css';
 import { useEffect, useRef } from 'react';
-// import Matter from 'matter-js';
 import Matter, { use } from 'matter-js';
 
 
