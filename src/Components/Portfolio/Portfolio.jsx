@@ -78,7 +78,7 @@ const Portfolio = () => {
         return Bodies.rectangle(x, y, 150, 20, { collisionFilter: { group: group },
                 render: {
             sprite: {
-                texture: '/src/assets/rope2.png',
+                texture: '/rope2.png',
                 // rotation: Math.PI / 2
             }
         } });
