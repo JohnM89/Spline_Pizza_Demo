@@ -40,7 +40,7 @@ const HomePage = () => {
                     color: 'green',
                     textShadow: '1px 1px 2px #000000',
                     
-                }}>Welcome to my Pizza!</h1>
+                }}>Welcome to the Pizza!</h1>
                 <div className='flex flex-col justify-center'>
                 <img src={polaroidImage} alt="Descriptive Alt Text" className=" w-1/2 md:w-3/4 lg:w-full pt-20 mt-14 ml-14 mr-14 polaroid" style={{ maxWidth: '65%', maxHeight: 'auto' }} />
 {/* <svg className="handwriting w-1/2 md:w-3/4 lg:w-full mt-14 ml-14 mr-14" style={{ maxWidth: '75%', maxHeight: 'auto' }} viewBox="0 0 195.84 195.84">
