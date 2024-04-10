@@ -127,27 +127,26 @@ const Portfolio = () => {
 //     };
 // }, []);
 
-    return (
-        //  <div ref={sceneRef} >
-        <div  className="grid">
-            
-           
-            {/* Your portfolio constent goes here */}
-                <div className="relative bg-black top-6  left-9 w-0 h-0.5 horizontal-line1"></div> 
-    <div className="relative bg-black top-9 left-6 h-0 w-0.5 vertical-line1"></div>
-   
-            <h1 className=" absolute text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-20 pt-10" style={{
-                    color: 'green',
-                    textShadow: '1px 1px 2px #000000',
-                    // filter: 'drop-shadow(0 0 0.75rem crimson)'
-                }}>Portfolio Page</h1>
-                {/* <div ref={sceneRef} className="flex flex-wrap justify-center">
-                    </div> */}
+return (
+    <div className="grid grid-cols-2 gap-4 h-screen">
+        <div className="relative space-y-6 p-16 flex flex-col justify-start items-start">
+            <div className="absolute bg-black top-16 left-16 w-0 h-0.5 horizontal-line1"></div> 
+            <div className="absolute bg-black top-16 left-12 h-0 w-0.5 vertical-line1"></div>
+
+            <h1 className="text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeInL" style={{ color: 'green', textShadow: '1px 1px 2px #000000' }}>Portfolio Page</h1>
+
+            <div className="w-full flex flex-col space-y-4">
+                <div className="bg-white p-8 md:p-16 lg:p-20 rounded-lg shadow-md h-3/5 flex items-center justify-center"></div>
+                <div className="bg-white p-8 md:p-16 lg:p-20 rounded-lg shadow-md h-3/5 flex items-center justify-center"></div>
+                <div className="bg-white p-8 md:p-16 lg:p-20 rounded-lg shadow-md h-3/5 flex items-center justify-center"></div>
             </div>
-        // </div>
-        
-        
-    );
+        </div>
+
+        <div className="flex flex-col justify-center items-center p-16 lg:flex-grow">
+            {/* will contain svg of languages/technologies */}
+        </div>
+    </div>
+);
 };
 
 export default Portfolio;

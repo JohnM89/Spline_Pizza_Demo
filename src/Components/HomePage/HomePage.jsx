@@ -34,12 +34,12 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
                 <div className=" z-10 absolute bg-black top-6  left-9 w-0 h-0.5 horizontal-line1"></div> 
     <div className="z-10 absolute bg-black top-9 left-6 h-0 w-0.5 vertical-line1"></div>
-            {/* Left side content */}
+
             <div className="z-10 flex flex-col  pl-14 pt-12 pr-14">
                 <h1 className="absolute text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeIn pl-2 pt-2 pr-2" style={{
                     color: 'green',
                     textShadow: '1px 1px 2px #000000',
-                    // filter: 'drop-shadow(0 0 0.75rem crimson)'
+                    
                 }}>Welcome to my Pizza!</h1>
                 <div className='flex flex-col justify-center'>
                 <img src={polaroidImage} alt="Descriptive Alt Text" className=" w-1/2 md:w-3/4 lg:w-full pt-20 mt-14 ml-14 mr-14 polaroid" style={{ maxWidth: '65%', maxHeight: 'auto' }} />
@@ -53,16 +53,9 @@ const HomePage = () => {
                 </div>
 
 
-                {/* Other content here */}
+
             </div>
 
-            {/* Right side for Spline 3D object */}
-    {/* <div className="z-10 mb-14  items-center flex flex-col justify-center w-full h-auto">
-        <div className="spline-container relative" >
-            <Spline className="spline-scale w-full h-auto" scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
-        </div>
-  
-    </div> */}
 
 
 </div>
