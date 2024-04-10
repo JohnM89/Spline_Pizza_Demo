@@ -1,48 +1,48 @@
 // import React from 'react';
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 import '../About/About.css';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+// import * as THREE from 'three';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 // import Spline from '@splinetool/react-spline';
 
 const About = () => {
-  const mountRef = useRef(null); // This ref will point to the div where the Three.js scene should be rendered
+//   const mountRef = useRef(null); // This ref will point to the div where the Three.js scene should be rendered
 
-  useEffect(() => {
-    // Scene setup
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, mountRef.current.clientWidth / mountRef.current.clientHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
-    mountRef.current.appendChild(renderer.domElement); // Append the renderer to the DOM
+//   useEffect(() => {
+//     // Scene setup
+//     const scene = new THREE.Scene();
+//     const camera = new THREE.PerspectiveCamera(75, mountRef.current.clientWidth / mountRef.current.clientHeight, 0.1, 1000);
+//     const renderer = new THREE.WebGLRenderer();
+//     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
+//     mountRef.current.appendChild(renderer.domElement); // Append the renderer to the DOM
 
-    // Lighting
-    const ambientLight = new THREE.AmbientLight(0xcccccc, 0.4);
-    scene.add(ambientLight);
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-    scene.add(directionalLight);
+//     // Lighting
+//     const ambientLight = new THREE.AmbientLight(0xcccccc, 0.4);
+//     scene.add(ambientLight);
+//     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+//     scene.add(directionalLight);
 
-    // Camera positioning
-    camera.position.z = 5;
+//     // Camera positioning
+//     camera.position.z = 5;
 
-    // GLTFLoader to load a .glb file
-    const loader = new GLTFLoader();
-    loader.load('/untitled.gltf', (gltf) => {
-      scene.add(gltf.scene);
-    });
+//     // GLTFLoader to load a .glb file
+//     const loader = new GLTFLoader();
+//     loader.load('/untitled.gltf', (gltf) => {
+//       scene.add(gltf.scene);
+//     });
 
-    // Animation loop
-    const animate = () => {
-      requestAnimationFrame(animate);
-      renderer.render(scene, camera);
-    };
-    animate();
+//     // Animation loop
+//     const animate = () => {
+//       requestAnimationFrame(animate);
+//       renderer.render(scene, camera);
+//     };
+//     animate();
 
-    // Cleanup
-    return () => {
-      mountRef.current.removeChild(renderer.domElement);
-    };
-  }, []); // Empty array ensures this effect runs only once on mount
+//     // Cleanup
+//     return () => {
+//       mountRef.current.removeChild(renderer.domElement);
+//     };
+//   }, []); // Empty array ensures this effect runs only once on mount
 
  
 
@@ -56,18 +56,15 @@ const About = () => {
     return (
         <div className="grid grid-cols-2 gap-4 h-screen">
             {/* Left column for the Spline model and modal */}
-<div className="flex flex-col justify-center items-center p-16 lg:flex-grow">
-                <div id="modal-wrapper" className="w-full h-full flex justify-center items-center">
-                    <div id="modal" className="w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"> {/* Control modal width on larger screens */}
+            <div className="flex flex-col justify-center items-center p-16 lg:flex-grow">
+                {/* <div id="modal-wrapper" className="w-full h-full flex justify-center items-center">
+                    <div id="modal" className="w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"> 
                         <div id="modal-background"></div>
                         <div id="modal-content" className="flex flex-col justify-center items-center">
-                            {/* <div className="spline-container">
-                                <Spline scene="https://prod.spline.design/YTEw5P9UNxWb4XB7/scene.splinecode" />
-                            </div> */}
                              <div className="z-10" ref={mountRef} style={{ width: '100%', height: '100vh' }}></div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Right column for title and containers */}
