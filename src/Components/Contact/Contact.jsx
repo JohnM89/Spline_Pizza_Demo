@@ -28,11 +28,11 @@ const Contact = () => {
   return (
     <div className="grid contact grid-flow-row auto-rows-max"> 
             <div className="relative space-y-6 p-16 flex flex-col justify-end items-center">
-                                    <div className="absolute bg-black top-16 right-16 w-0 h-0.5 horizontal-line2"></div> 
-    <div className="absolute bg-black top-16 right-12 h-0 w-0.5 vertical-line2"></div>
+                                    <div className="absolute bg-black top-16  w-0 h-0.5 horizontal-line2"></div> 
+    {/* <div className="absolute bg-black top-16 right-12 h-0 w-0.5 vertical-line2"></div> */}
                      <h1 className=" text-base md:text-xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold animate-slideFadeInR" style={{ color: 'green', textShadow: '1px 1px 2px #000000' }}>Contact Pizza</h1>
             
-    <div className="relative flex flex-box align-center justify-center  ">
+    <div className="relative flex flex-box align-center justify-center z-10 ">
         
       <div className="text-zone md:text-xl lg:text-3xl xl:text-5xl 2xl:text-2xl">
 
