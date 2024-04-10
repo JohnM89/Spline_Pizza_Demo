@@ -66,13 +66,7 @@ useEffect(() => {
 
         
         <div id="star-container">
-        
-
-            
-            
-          {/* <header >
-          </header> */}
-          
+         
           <main>
             <section id="home">
               <HomePage setShowStickyDiv={setShowStickyDiv} />
@@ -87,9 +81,6 @@ useEffect(() => {
               <Contact />
             </section>
           </main>
-          {/* <footer>
-           
-          </footer> */}
         </div>
           
           <div id="star-pattern"></div>
@@ -106,7 +97,6 @@ useEffect(() => {
           <div id="stripe-pattern"></div>
         </div> */}
 
-        {/* Existing App content now wrapped inside */}
       </div>
       
 

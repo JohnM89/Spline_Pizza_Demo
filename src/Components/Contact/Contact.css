@@ -65,3 +65,28 @@
   font-weight: 400;
 
 } */
+
+@keyframes drawHorizontalLine4 {
+    to { width: 25%; } /* Adjust as needed */
+}
+
+@keyframes drawVerticalLine4 {
+    to { height: 50px; } /* Adjust based on desired length */
+}
+
+.horizontal-line4 {
+
+
+    
+    animation: drawHorizontalLine4 1.78s forwards;
+    
+}
+
+
+ .vertical-line4 {
+
+
+    
+    animation: drawVerticalLine4 1.32s .5s forwards;
+    
+}
