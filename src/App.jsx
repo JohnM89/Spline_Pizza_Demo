@@ -74,7 +74,7 @@ useEffect(() => {
             <section id="about-me" className="background-about">
               <AboutMe setShowStickyDiv={setShowStickyDiv} />
             </section>
-            <section id="portfolio" className="background-portfolio">
+            <section id="portfolio" className="z-100 background-portfolio">
               <Portfolio  />
             </section>
             <section id="contact" className="background-contact">

@@ -28,11 +28,13 @@ const Portfolio = () => {
         element: sceneRef.current,
         engine: engine,
         options: {
-            width: 800,
-            height: 600,
+            width: 600,
+            height: 500,
             showAngleIndicator: true,
             showCollisions: true,
-            showVelocity: true
+            showVelocity: true,
+                background: "transparent",
+                wireframes: false
         }
     });
 
@@ -41,6 +43,8 @@ const Portfolio = () => {
     // create runner
     const runner = Runner.create();
     Runner.run(runner, engine);
+
+    
 
     // add bodies
     const group = Body.nextGroup(true);
@@ -119,17 +123,15 @@ const Portfolio = () => {
 
     // constext for MatterTools.Demo
     
-    // return {
-    //     engine: engine,
-    //     runner: runner,
-    //     render: render,
-    //     canvas: render.canvas,
-    // //     // stop the demo when the container is removed
-    //     stop: function() {
-    //         Matter.Render.stop(render);
-    //         Matter.Runner.stop(runner);
-    //     }
-    // };
+return () => {
+    // Render.stop(render);
+    // Runner.stop(runner);
+    // Only clear the engine and world if necessary, based on your application's needs
+    // Engine.clear(engine);
+    // World.clear(world, false); // `false` ensures it doesn't clear the engine; adjust based on your needs
+    // Consider commenting out the next line if React controls the <div>
+    // render.canvas.remove(); // Only do this if the canvas isn't automatically managed by React
+};
 
 }, []);
 
