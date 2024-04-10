@@ -2,8 +2,9 @@
 // import Spline from '@splinetool/react-spline';
 import '../Portfolio/Portfolio.css';
 import { useEffect, useRef } from 'react';
-import Matter from 'matter-js';
-// import Matter, { use } from 'matter-js';
+// import Matter from 'matter-js';
+import Matter, { use } from 'matter-js';
+
 
 const Portfolio = () => {
     const sceneRef = useRef(null);
@@ -95,8 +96,10 @@ const Portfolio = () => {
         ropeA,
         ropeB,
         ropeC,
-        Bodies.rectangle(400, 600, 1200, 50.5, { isStatic: true })
+        // Bodies.rectangle(400, 600, 1200, 50.5, { isStatic: true })
     ]);
+
+    
 
     // add mouse constrol
     const mouse = Mouse.create(render.canvas),
@@ -118,20 +121,19 @@ const Portfolio = () => {
     // fit the render viewport to the scene
     Render.lookAt(render, {
         min: { x: 0, y: 0 },
-        max: { x: 700, y: 600 }
+        max: { x: 700, y: 1000 }
     });
 
     // constext for MatterTools.Demo
     
-return () => {
-    // Render.stop(render);
-    // Runner.stop(runner);
-    // Only clear the engine and world if necessary, based on your application's needs
-    // Engine.clear(engine);
-    // World.clear(world, false); // `false` ensures it doesn't clear the engine; adjust based on your needs
-    // Consider commenting out the next line if React controls the <div>
-    // render.canvas.remove(); // Only do this if the canvas isn't automatically managed by React
-};
+
+        return () => {
+            Render.stop(render);
+            Runner.stop(runner);
+            Engine.clear(engine);
+            render.canvas.remove();
+        };
+
 
 }, []);
 
